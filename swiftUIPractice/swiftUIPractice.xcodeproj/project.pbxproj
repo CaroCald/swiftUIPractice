@@ -57,9 +57,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		885D76892D9AF9CC005BDF1A /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
-		885D768B2D9AFA4F005BDF1A /* Local */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Local; sourceTree = "<group>"; };
-		885D768C2D9AFA58005BDF1A /* Remote */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Remote; sourceTree = "<group>"; };
+		84A62F4C2D9B566B00D0A35A /* Data */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Data; sourceTree = "<group>"; };
+		84A62F512D9B56A900D0A35A /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		84A62F522D9B56B500D0A35A /* UseCases */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UseCases; sourceTree = "<group>"; };
+		84A62F532D9B56BF00D0A35A /* Repositories */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Repositories; sourceTree = "<group>"; };
+		84A62F542D9B56CA00D0A35A /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +112,9 @@
 		84F57C302C57037100699656 /* swiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
-				885D76892D9AF9CC005BDF1A /* Features */,
+				84A62F542D9B56CA00D0A35A /* Features */,
+				84A62F4C2D9B566B00D0A35A /* Data */,
 				88ECD0412C597BD4002CABD1 /* Domain */,
-				88ECD0402C597BCE002CABD1 /* Data */,
 				84F57C312C57037100699656 /* swiftUIPracticeApp.swift */,
 				84F57C332C57037100699656 /* ContentView.swift */,
 				84F57C352C57037300699656 /* Assets.xcassets */,
@@ -144,27 +146,6 @@
 				84F57C4E2C57037300699656 /* swiftUIPracticeUITestsLaunchTests.swift */,
 			);
 			path = swiftUIPracticeUITests;
-			sourceTree = "<group>";
-		};
-		881505AD2CA3518D0048BAE7 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		881505AE2CA351960048BAE7 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		881505AF2CA3519D0048BAE7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		88D893EE2CB44B8A000E9DD3 /* Components */ = {
@@ -219,21 +200,12 @@
 			path = text;
 			sourceTree = "<group>";
 		};
-		88ECD0402C597BCE002CABD1 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				885D768C2D9AFA58005BDF1A /* Remote */,
-				885D768B2D9AFA4F005BDF1A /* Local */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		88ECD0412C597BD4002CABD1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				881505AF2CA3519D0048BAE7 /* Model */,
-				881505AE2CA351960048BAE7 /* UseCases */,
-				881505AD2CA3518D0048BAE7 /* Repository */,
+				84A62F532D9B56BF00D0A35A /* Repositories */,
+				84A62F522D9B56B500D0A35A /* UseCases */,
+				84A62F512D9B56A900D0A35A /* Model */,
 				88D893EE2CB44B8A000E9DD3 /* Components */,
 			);
 			path = Domain;
@@ -255,9 +227,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				885D76892D9AF9CC005BDF1A /* Features */,
-				885D768B2D9AFA4F005BDF1A /* Local */,
-				885D768C2D9AFA58005BDF1A /* Remote */,
+				84A62F4C2D9B566B00D0A35A /* Data */,
+				84A62F512D9B56A900D0A35A /* Model */,
+				84A62F522D9B56B500D0A35A /* UseCases */,
+				84A62F532D9B56BF00D0A35A /* Repositories */,
+				84A62F542D9B56CA00D0A35A /* Features */,
 			);
 			name = swiftUIPractice;
 			productName = swiftUIPractice;
