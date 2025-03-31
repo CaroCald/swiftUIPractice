@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		84F57C432C57037300699656 /* swiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57C422C57037300699656 /* swiftUIPracticeTests.swift */; };
 		84F57C4D2C57037300699656 /* swiftUIPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57C4C2C57037300699656 /* swiftUIPracticeUITests.swift */; };
 		84F57C4F2C57037300699656 /* swiftUIPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57C4E2C57037300699656 /* swiftUIPracticeUITestsLaunchTests.swift */; };
+		88D893F92CB44E72000E9DD3 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D893F82CB44E72000E9DD3 /* CustomText.swift */; };
+		88D893FB2CB457CF000E9DD3 /* CustomLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D893FA2CB457CF000E9DD3 /* CustomLoading.swift */; };
+		88D893FD2CB45DE2000E9DD3 /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D893FC2CB45DE2000E9DD3 /* CustomInput.swift */; };
+		88D893FF2CB45E68000E9DD3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D893FE2CB45E68000E9DD3 /* CustomButton.swift */; };
+		88D894012CB46249000E9DD3 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D894002CB46249000E9DD3 /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,18 @@
 		84F57C482C57037300699656 /* swiftUIPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUIPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F57C4C2C57037300699656 /* swiftUIPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIPracticeUITests.swift; sourceTree = "<group>"; };
 		84F57C4E2C57037300699656 /* swiftUIPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88D893F82CB44E72000E9DD3 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		88D893FA2CB457CF000E9DD3 /* CustomLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoading.swift; sourceTree = "<group>"; };
+		88D893FC2CB45DE2000E9DD3 /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
+		88D893FE2CB45E68000E9DD3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		88D894002CB46249000E9DD3 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		885D76892D9AF9CC005BDF1A /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
+		885D768B2D9AFA4F005BDF1A /* Local */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Local; sourceTree = "<group>"; };
+		885D768C2D9AFA58005BDF1A /* Remote */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Remote; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84F57C2B2C57037100699656 /* Frameworks */ = {
@@ -94,6 +110,9 @@
 		84F57C302C57037100699656 /* swiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				885D76892D9AF9CC005BDF1A /* Features */,
+				88ECD0412C597BD4002CABD1 /* Domain */,
+				88ECD0402C597BCE002CABD1 /* Data */,
 				84F57C312C57037100699656 /* swiftUIPracticeApp.swift */,
 				84F57C332C57037100699656 /* ContentView.swift */,
 				84F57C352C57037300699656 /* Assets.xcassets */,
@@ -127,6 +146,99 @@
 			path = swiftUIPracticeUITests;
 			sourceTree = "<group>";
 		};
+		881505AD2CA3518D0048BAE7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		881505AE2CA351960048BAE7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		881505AF2CA3519D0048BAE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88D893EE2CB44B8A000E9DD3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88D893F42CB44BC7000E9DD3 /* text */,
+				88D893F22CB44BB7000E9DD3 /* loading */,
+				88D893F12CB44BB0000E9DD3 /* inputs */,
+				88D893F02CB44BA8000E9DD3 /* buttons */,
+				88D893EF2CB44BA2000E9DD3 /* alerts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88D893EF2CB44BA2000E9DD3 /* alerts */ = {
+			isa = PBXGroup;
+			children = (
+				88D894002CB46249000E9DD3 /* CustomAlert.swift */,
+			);
+			path = alerts;
+			sourceTree = "<group>";
+		};
+		88D893F02CB44BA8000E9DD3 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				88D893FE2CB45E68000E9DD3 /* CustomButton.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		88D893F12CB44BB0000E9DD3 /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				88D893FC2CB45DE2000E9DD3 /* CustomInput.swift */,
+			);
+			path = inputs;
+			sourceTree = "<group>";
+		};
+		88D893F22CB44BB7000E9DD3 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				88D893FA2CB457CF000E9DD3 /* CustomLoading.swift */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
+		88D893F42CB44BC7000E9DD3 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				88D893F82CB44E72000E9DD3 /* CustomText.swift */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		88ECD0402C597BCE002CABD1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				885D768C2D9AFA58005BDF1A /* Remote */,
+				885D768B2D9AFA4F005BDF1A /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		88ECD0412C597BD4002CABD1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				881505AF2CA3519D0048BAE7 /* Model */,
+				881505AE2CA351960048BAE7 /* UseCases */,
+				881505AD2CA3518D0048BAE7 /* Repository */,
+				88D893EE2CB44B8A000E9DD3 /* Components */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +253,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				885D76892D9AF9CC005BDF1A /* Features */,
+				885D768B2D9AFA4F005BDF1A /* Local */,
+				885D768C2D9AFA58005BDF1A /* Remote */,
 			);
 			name = swiftUIPractice;
 			productName = swiftUIPractice;
@@ -259,6 +376,11 @@
 			files = (
 				84F57C342C57037100699656 /* ContentView.swift in Sources */,
 				84F57C322C57037100699656 /* swiftUIPracticeApp.swift in Sources */,
+				88D893FB2CB457CF000E9DD3 /* CustomLoading.swift in Sources */,
+				88D893FF2CB45E68000E9DD3 /* CustomButton.swift in Sources */,
+				88D893F92CB44E72000E9DD3 /* CustomText.swift in Sources */,
+				88D893FD2CB45DE2000E9DD3 /* CustomInput.swift in Sources */,
+				88D894012CB46249000E9DD3 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIPractice/Preview Content\"";
-				DEVELOPMENT_TEAM = 89359WKHFY;
+				DEVELOPMENT_TEAM = KFW63RJ4JK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -430,6 +552,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIPractice/Preview Content\"";
-				DEVELOPMENT_TEAM = 89359WKHFY;
+				DEVELOPMENT_TEAM = KFW63RJ4JK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,6 +582,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
