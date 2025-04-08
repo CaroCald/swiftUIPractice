@@ -6,47 +6,25 @@
 //
 
 import Foundation
+import FirebaseAuth
 class AuthenticationUseCase {
-    private let service: AccountService
+    private let service: AuthProtocol
     
-    init(service: AccountService) {
+    init(service: AuthProtocol) {
         self.service = service
     }
     
-    func login(user: UserRequest) -> AsyncStream<ApiResult<UserResponse>> {
-        return AsyncStream { continuation in
-            Task {
-                for await result in service.authenticate(email: user.email, password: user.password) {
-                    switch result {
-                    case .success(let response):
-                        //sessionManager.saveSession(true)
-                        continuation.yield(ApiResult.success(response))
+    func authenticate(email: String, password: String) -> AsyncStream<Result<UserResponse, Error>> {
+        return service.authenticate(email: email, password: password)
+    }
 
-                    case .failure(let error):
-                        continuation.yield(ApiResult.error(error))
-                    }
-                }
-            }
-        }
-    }
-    
-    func logout() async {
-       // sessionManager.clearSession()
-        for await result in service.signOut() {
-            switch result {
-            case .success(let response):
-                _ = ApiResult.success(response)
-            case .failure(let error):
-                _ = ErrorUtils.handleException(exception: error)
-            }
-        }
-    }
-    
-    func getUserInfo() -> AsyncStream<UserFirebase> {
-        return service.currentUserFirebase
+    func signOut() -> AsyncStream<Result<OkResponse, Error>> {
+        return service.signOut()
     }
     
     func isLogged() -> Bool {
-        return false //sessionManager.isSavedSession()
+        return false // sessionManager.isSavedSession()
     }
+
+
 }

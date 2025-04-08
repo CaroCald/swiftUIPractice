@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct CustomButton: View {
     let icon: String?
     let label: String
     let action: () -> Void
@@ -33,18 +33,18 @@ struct ButtonView: View {
                         .scaledToFit()
                         .frame(width: 28, height: 28)
                 }
-                CustomText(text:label)
+                CustomText(text:label, colorCustom: Color.white)
             }
-            .font(.title2)
+            .font(.title)
             .padding(.vertical, 12)
-            .foregroundColor(Color.purple)
+            .foregroundColor(Color.green)
             .frame(maxWidth: .infinity)
             .background {
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.purple, lineWidth: 2.0)
+                    .stroke(Color.green, lineWidth: 2.0)
                   .background {
                       RoundedRectangle(cornerRadius: 12)
-                          .fill(Color.purple.opacity(0.2))
+                          .fill(Color.green.opacity(0.2))
                   }
             }
         }
